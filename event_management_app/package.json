@@ -24,8 +24,7 @@
   },
   "scripts": {
     "preflight": "bash scripts/preflight.sh",
-    "gen:handlers": "tsx scripts/generate-handler-stubs.ts",
-    "validate": "pnpm run preflight && pnpm run gen:handlers",
+    "validate": "pnpm run preflight",
     "build": "pnpm -r --parallel build",
     "test": "pnpm run validate && pnpm -r --parallel test",
     "typecheck": "pnpm -r --parallel typecheck",

@@ -1,8 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm build",
   "functions": {
     "api/index.ts": {
-      "includeFiles": "{openapi/openapi_spec.yaml,node_modules/.pnpm/@seriousme+openapi-schema-validator@*/node_modules/@seriousme/openapi-schema-validator/schemas/**/*.json}"
+      "maxDuration": 30
     }
   },
   "rewrites": [
